@@ -6,8 +6,7 @@ Object::Object()
 	vel_ = {};
 	radius_ = {};
 	coolDown_ = {};
-	isAlive_ = {};
-	range_ = {};
+	
 }
 
 Object::~Object()
@@ -28,7 +27,7 @@ void Object::Draw()
 
 Vector2 Object::GetPos() const
 {
-	return pos_
+	return pos_;
 }
 
 float Object::GetRadius() const
@@ -36,12 +35,3 @@ float Object::GetRadius() const
 	return radius_;
 }
 
-float Object::GetRange() const
-{
-	return range_;
-}
-
-bool Object::ChackHitCircle()
-{
-	return isAlive_=false;
-}

@@ -9,10 +9,8 @@ protected:
 	Vector2 vel_;
 	float radius_;
 	int coolDown_;
-	
-	float range_;
 
-	static bool isAlive_;
+	
 public:
 	Object();
 	~Object();
@@ -23,8 +21,6 @@ public:
 
 	Vector2 GetPos()const;
 	float GetRadius()const;
-	float GetRange()const;
 
-	bool ChackHitCircle();
 };
 
